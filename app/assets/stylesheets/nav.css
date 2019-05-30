@@ -1,0 +1,40 @@
+nav {
+  padding: 20px;
+  font-size: 20px;
+}
+
+nav a {
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+nav a.brand-logo {
+  color: grey;
+  font-size: 24px;
+}
+
+nav a.brand-logo:hover {
+  color: black;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 5px;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1,0 +1,10 @@
+header {
+  padding: 5px;
+}
+
+header h1 {
+  color: grey;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 36px;
+}
