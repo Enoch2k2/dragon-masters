@@ -1,0 +1,18 @@
+<h1 class="form-header">Login</h1>
+<div class="error">
+  <%= flash[:error] if flash[:error] %>
+</div>
+
+<%= form_tag login_path, class: "session-form" do %>
+  <div class="form-field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </div>
+
+  <div class="form-field">
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div>
+
+  <%= submit_tag "Login", class: "btn" %>
+<% end %>

@@ -1,0 +1,33 @@
+<h1 class="form-header">Create Account</h1>
+<div class="error">
+  <%= flash[:error] if flash[:error] %>
+</div>
+
+<%= form_for @user, url: signup_path, class: "session-form" do |f| %>
+  <div class="form-field">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div class="form-field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="form-field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="form-field">
+    <%= f.label :birthdate %>
+    <%= f.date_field :birthdate %>
+  </div>
+
+  <div class="form-field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <%= f.submit "Create Account", class: "btn" %>
+<% end %>

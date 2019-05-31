@@ -1,0 +1,27 @@
+h1.form-header {
+  font-family: 'Pacifico', cursive;
+  color: grey;
+  text-align: center;
+}
+
+form.session-form, form#new_user {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+form div.form-field {
+  padding: 5px 0;
+}
+
+form input.btn {
+  font-family: 'Pacifico', cursive;
+  background: grey;
+  color: white;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+form input.btn:hover {
+  background: black;
+}
